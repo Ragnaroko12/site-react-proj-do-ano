@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+.bg-blue {
+  background-color: rgb(26, 62, 120);
+}
+.bg-yellow {
+  background-color: rgb(255, 204, 16);
+}
+.bg-white {
+  background-color: rgb(255, 255, 254);
+}
+.text-blue {
+  color: rgb(26, 62, 120);
+}
+.text-yellow {
+  color: rgb(255, 204, 16);
+}
+.text-white {
+  color: rgb(255, 255, 254);
+}
+
+@keyframes slidestart {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideend {
+  from {
+    transform: translateX(-5px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
+.menu-end {
+  animation: slideend 0.5s;
+  animation-fill-mode: forwards;
+}
+.menu-start {
+  animation: slidestart 0.5s;
+  animation-fill-mode: forwards;
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url(./fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format("woff2");
+}
+.Orbitron {
+  font-family: Orbitron;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url(./fonts/sans/OpenSans-Italic-VariableFont_wdth\wght.ttf)
+    format("woff2");
+}
+
+.Sans {
+  font-family: sans;
+}
