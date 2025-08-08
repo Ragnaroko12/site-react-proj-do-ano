@@ -50,7 +50,7 @@
 }
 @font-face {
   font-family: "Orbitron";
-  src: url(./fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format("woff2");
+  src: url(./fonts/Orbitron/Orbitron-VariableFont_wght.ttf) format("ttf");
 }
 .Orbitron {
   font-family: Orbitron;
@@ -59,7 +59,7 @@
 @font-face {
   font-family: "sans";
   src: url(./fonts/sans/OpenSans-Italic-VariableFont_wdth\wght.ttf)
-    format("woff2");
+    format("ttf");
 }
 
 .Sans {

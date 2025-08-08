@@ -6,7 +6,7 @@ function Texto(props) {
   function position1() {
     return (
       <div className="bg-blue">
-        <div className="ml-40 mr-150 mt-10 text-center Orbitron text-yellow text-[30px]">
+        <div className="ml-40 mr-150 text-center Orbitron text-yellow text-[30px]">
           <h1>{titulo}</h1>
         </div>
         <div className=" items-center ml-40 mr-40 grid grid-cols-2 grid-row text-center ">
@@ -24,7 +24,7 @@ function Texto(props) {
   function position2() {
     return (
       <div className="bg-blue">
-        <div className="ml-40 mr-150 mt-10 text-center Orbitron text-yellow text-[30px]">
+        <div className="ml-40 mr-150 text-center Orbitron text-yellow text-[30px]">
           <h1>{titulo}</h1>
         </div>
         <div
@@ -41,7 +41,7 @@ function Texto(props) {
   function position3() {
     return (
       <div className="bg-blue">
-        <div className="ml-40 mr-150 mt-10 text-center Orbitron text-yellow text-[30px]">
+        <div className="ml-40 mr-150  text-center Orbitron text-yellow text-[30px]">
           <h1>{titulo}</h1>
         </div>
         <div
