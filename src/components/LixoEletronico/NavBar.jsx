@@ -1,8 +1,15 @@
+import { useState } from "react";
+
 function NavBar({ verificar, clicado }) {
+  const [Valor, setvalor] = useState(1);
+  function verific() {
+    console.log = "clicado";
+    setvalor(2);
+  }
   function Menu() {
     if (verificar == true) {
       return (
-        <div className="menu-start bg-yellow h-100 flex w-80 ml-[10px] rounded-b  r-3xl ">
+        <div className="menu-start bg-yellow h-100 flex w-0 ml-[10px] rounded-b  r-3xl ">
           <div className="ml-2">
             <a href="http://">
               <button>Plastico</button>
@@ -12,7 +19,7 @@ function NavBar({ verificar, clicado }) {
       );
     } else {
       return (
-        <div className="menu-end bg-yellow h-100 flex w-50 ml-[10px]">
+        <div className="menu-end bg-yellow h-100 flex w-70 ml-[10px]">
           <div className="ml-2">
             <a href="http://">
               <button>Plastico</button>
@@ -40,7 +47,7 @@ function NavBar({ verificar, clicado }) {
             </div>
 
             <div className="col-start-13 Orbitron mt-2 text-white">
-              <h1>sobre nós</h1>
+              <button onClick={verific}>Sobre nois</button>
             </div>
           </div>
         </div>
