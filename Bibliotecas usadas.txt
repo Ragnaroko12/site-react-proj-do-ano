@@ -1,0 +1,2 @@
+lucid {https://lucide.dev/guide/} bliblioteca com mais de 1000 icones
+mui.ui {https://mui.com/} componentes estilizados ex button

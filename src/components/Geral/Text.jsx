@@ -5,17 +5,13 @@ function Texto(props) {
 
   function position1() {
     return (
-      <div className="bg-blue">
-        <div className="ml-40 mr-150 text-center Orbitron text-yellow text-[30px]">
-          <h1>{titulo}</h1>
+      <div className="flex flex-row items-center justify-center w-screen">
+        <div className="flex flex-col gap-5 justify-center items-center pl-10">
+          <h1 className="Orbitron text-yellow text-4xl">{titulo}</h1>
+          <p className="Sans leading-5 text-2xl text-white pl-2">{text}</p>
         </div>
-        <div className=" items-center ml-40 mr-40 grid grid-cols-2 grid-row text-center ">
-          <div className="Sans leading-5 text-[20px] text-white">
-            <p>{text}</p>
-          </div>
-          <div className="">
-            <img src={props.link} />
-          </div>
+        <div>
+          <img src={props.link} alt="" className="max-w-100 h-auto" />
         </div>
       </div>
     );
@@ -23,25 +19,16 @@ function Texto(props) {
 
   function position2() {
     return (
-      <div className="bg-blue">
-        <div className="ml-40 mr-150 text-center Orbitron text-yellow text-[30px]">
-          <h1>{titulo}</h1>
-        </div>
-        <div
-          className="
-         items-center ml-40 mr-40 text-left "
-        >
-          <div className="Sans leading-5 text-[20px] text-white">
-            <p>{text}</p>
-          </div>
-        </div>
+      <div className="flex flex-col justify-center items-center gap-5">
+        <h1 className="Orbitron text-yellow text-4xl">{titulo}</h1>
+        <p className="pl-10 Sans text-white text-2xl leading-5">{text}</p>
       </div>
     );
   }
   function position3() {
     return (
-      <div className="bg-blue">
-        <div className="ml-40 mr-150  text-center Orbitron text-yellow text-[30px]">
+      <div className="">
+        <div className="ml-40 mr-150  text-center Orbitron text-yellow text-4xl">
           <h1>{titulo}</h1>
         </div>
         <div
@@ -51,7 +38,7 @@ function Texto(props) {
           <div className="">
             <img src={props.link} />
           </div>
-          <div className="Sans leading-5 text-[20px] text-white">
+          <div className="Sans leading-5 text-2xl text-white">
             <p>{text}</p>
           </div>
         </div>
