@@ -62,7 +62,7 @@ export default function SobreNos() {
 
       <div className="row">
         {membros.map((membro, index) => (
-          <div className="col-md-3" key={index}>
+          <div  key={index}>
             <div
               className={`flip-container ${
                 flipIndex === index ? "active" : ""
@@ -93,3 +93,4 @@ export default function SobreNos() {
     </div>
   );
 }
+
