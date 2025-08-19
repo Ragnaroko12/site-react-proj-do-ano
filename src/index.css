@@ -92,3 +92,16 @@
   display: flex;
   align-items: center;
 }
+
+@keyframes aumentar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.aumentar {
+  animation: aumentar 0.4s forwards;
+}

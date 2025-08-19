@@ -1,26 +1,28 @@
 import BodyEletronic from "./components/LixoEletronico/BodyEletronic";
-import Texto from "./components/Geral/Text";
 import { useState } from "react";
 import NavBar from "./components/LixoEletronico/NavBar";
 import SobreNos from "./components/Sobre nois/SobreNois";
-import Map from "./components/Map/Map";
+import "leaflet/dist/leaflet.css"; // Importa o CSS do Leaflet, isso é importante pro mapa aparecer certo
+import SimpleMap from "./components/Map/Map";
+import { Button } from "@mui/material";
+import { ArrowRight } from "lucide-react";
 
 function App() {
-  const [pag, setpag] = useState("principal");
+  const [pag, setpag] = useState("lixoeletronico");
   function setprincipal() {
-    setpag("principal");
+    setpag("lixoeletronico");
     console.log("iu");
   }
+  //  function setmais() {
+  //   setpag("mais");
+  //}
   function setmapa() {
     setpag("mapa");
-    console.log("na");
   }
   function setsobre() {
     setpag("sobrenois");
-    console.log("os");
   }
-
-  if (pag == "principal") {
+  if (pag == "lixoeletronico") {
     return (
       <div className="bg-blue h-screen w-screen overflow-x-hidden">
         <BodyEletronic
@@ -34,7 +36,7 @@ function App() {
     return (
       <div>
         <NavBar pagmap={setmapa} pagprinc={setprincipal} pagsobre={setsobre} />
-        <Map />
+        <SimpleMap />
       </div>
     );
   } else {
@@ -46,5 +48,7 @@ function App() {
     );
   }
 }
-
+// if (valor !== null && valor !== undefined) {
+//  console.log("O valor existe:", valor);
+//}
 export default App;
