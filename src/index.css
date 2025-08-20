@@ -105,3 +105,6 @@
 .aumentar {
   animation: aumentar 0.4s forwards;
 }
+.oco {
+  opacity: 0.85;
+}

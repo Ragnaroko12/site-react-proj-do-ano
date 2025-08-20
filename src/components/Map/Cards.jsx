@@ -1,16 +1,30 @@
 import { Button } from "@mui/material";
 
-function Cards({ click, setclick, id, nome }) {
+function Cards({
+  click,
+  setclick,
+  id,
+  nome,
+  cord,
+  posição,
+  setposição,
+  mapRef,
+}) {
+  function ecoponto() {
+    var set = cord;
+    setposição(set);
+    mapRef.current.flyTo(posição, 27);
+  }
   function setclic() {
+    ecoponto();
     setclick(id);
   }
   if (click != id) {
     return (
-      <div className="border bg-green-300 mb-1">
+      <div className="border oco rounded-sm bg-yellow mb-1">
         <Button className="w-50 h-20" onClick={setclic}>
           <div>
-            <h1 className="bg-red-600">{nome}</h1>
-            <h1 className="bg-rose-500">endereçoeeeeeeeeeee</h1>
+            <h1 className="text-white font-medium Orbitron">{nome}</h1>
             <Button>ir para o mapa</Button>
           </div>
         </Button>
@@ -18,14 +32,11 @@ function Cards({ click, setclick, id, nome }) {
     );
   } else {
     return (
-      <div className="border bg-green-300 mb-1 aumentar">
-        <Button className="w-50 h-20" onClick={setclic}>
-          <div>
-            <h1 className="bg-red-600">{nome}</h1>
-            <h1 className="bg-rose-500">endereçoeeeeeeeeeee</h1>
-            <Button>ir para o mapa</Button>
-          </div>
-        </Button>
+      <div className="border rounded-sm oco bg-yellow mb-1 aumentar ">
+        <div className="w-50 h-20 flex flex-col items-center justify-center">
+          <h1 className="text-white font-medium Orbitron">{nome}</h1>
+          <Button>ir para o mapa</Button>
+        </div>
       </div>
     );
   }

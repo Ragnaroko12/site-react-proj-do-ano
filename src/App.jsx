@@ -34,7 +34,7 @@ function App() {
     );
   } else if (pag == "mapa") {
     return (
-      <div>
+      <div className="bg-blue w-screen h-screen">
         <NavBar pagmap={setmapa} pagprinc={setprincipal} pagsobre={setsobre} />
         <SimpleMap />
       </div>
