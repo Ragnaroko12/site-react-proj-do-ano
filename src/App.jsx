@@ -24,7 +24,7 @@ function App() {
   }
   if (pag == "lixoeletronico") {
     return (
-      <div className="bg-blue h-screen w-screen overflow-x-hidden">
+      <div className="bg-gray-100 h-screen w-screen overflow-x-hidden">
         <BodyEletronic
           pagmap={setmapa}
           pagprinc={setprincipal}
@@ -34,7 +34,7 @@ function App() {
     );
   } else if (pag == "mapa") {
     return (
-      <div className="bg-blue w-screen h-screen">
+      <div className="bg-gray-100 w-screen h-screen">
         <NavBar pagmap={setmapa} pagprinc={setprincipal} pagsobre={setsobre} />
         <SimpleMap />
       </div>

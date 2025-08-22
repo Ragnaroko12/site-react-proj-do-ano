@@ -9,7 +9,7 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
   return (
     // ajuda roooolf
     <nav>
-      <div className="bg-yellow  h-12 w-screen ">
+      <div className="bg-blue-800  h-12 w-screen ">
         <div className="flex flex-row items-center justify-center gap-6 pt-2">
           <Button
             variant="outlined"

@@ -7,8 +7,8 @@ function Texto(props) {
     return (
       <div className="flex flex-row items-center justify-center w-screen">
         <div className="flex flex-col gap-5 justify-center items-center pl-10">
-          <h1 className="Orbitron text-yellow text-4xl">{titulo}</h1>
-          <p className="Sans leading-5 text-2xl text-white pl-2">{text}</p>
+          <h1 className=" text-4xl">{titulo}</h1>
+          <p className="Sans leading-5 text-2xl pl-2">{text}</p>
         </div>
         <div>
           <img src={props.link} alt="" className="max-w-100 h-auto" />
@@ -20,15 +20,15 @@ function Texto(props) {
   function position2() {
     return (
       <div className="flex flex-col justify-center items-center gap-5">
-        <h1 className="Orbitron text-yellow text-4xl">{titulo}</h1>
-        <p className="pl-10 Sans text-white text-2xl leading-5">{text}</p>
+        <h1 className=" text-4xl">{titulo}</h1>
+        <p className="pl-10 Sans text-2xl leading-5">{text}</p>
       </div>
     );
   }
   function position3() {
     return (
-      <div className="">
-        <div className="ml-40 mr-150  text-center Orbitron text-yellow text-4xl">
+      <div className="bg-gray-100">
+        <div className="ml-40 mr-150  text-center text-4xl">
           <h1>{titulo}</h1>
         </div>
         <div
@@ -38,7 +38,7 @@ function Texto(props) {
           <div className="">
             <img src={props.link} />
           </div>
-          <div className="Sans leading-5 text-2xl text-white">
+          <div className="Sans leading-5 text-2xl ">
             <p>{text}</p>
           </div>
         </div>
