@@ -60,9 +60,9 @@ export default function SobreNos() {
 
       <h2>Membros do grupo</h2>
 
-      <div className="row">
+      <div className="flex flex-col">
         {membros.map((membro, index) => (
-          <div  key={index}>
+          <div key={index}>
             <div
               className={`flip-container ${
                 flipIndex === index ? "active" : ""
@@ -93,4 +93,3 @@ export default function SobreNos() {
     </div>
   );
 }
-

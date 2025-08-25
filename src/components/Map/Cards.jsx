@@ -13,7 +13,7 @@ function Cards({
   function ecoponto() {
     var set = cord;
     setposição(set);
-    mapRef.current.flyTo(posição, 27);
+    mapRef.current.flyTo(posição, 100);
   }
   function setclic() {
     ecoponto();
