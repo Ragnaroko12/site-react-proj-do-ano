@@ -37,12 +37,7 @@ function BodyEletronic({ pagmap, pagprinc, pagsobre }) {
           velit aut quidem nobis natus veniam quasi! Magni ratione excepturi
           harum quod a doloribus, repudiandae suscipit eligendi quo laboriosam,
           non dolor! Illo voluptates voluptas dolorum sequi! Quibusdam odit
-          aspernatur porro quae et sequi maxime dolore neque deserunt molestiae
-          a ipsa nesciunt veritatis, itaque culpa eveniet? Rem quisquam nulla
-          exercitationem esse ab. Ipsam pariatur recusandae molestias ea maxime
-          repudiandae vero magni, dignissimos earum in mollitia quasi deleniti
-          labore sed magnam ratione accusantium eius perferendis ipsum eaque
-          tenetur sint error. Vitae, repellat. Maiores!
+          aspernatur !
         </Texto>
       </div>
     </div>
