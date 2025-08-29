@@ -4,8 +4,7 @@ import NavBar from "./components/LixoEletronico/NavBar";
 import SobreNos from "./components/Sobre nois/SobreNois";
 import "leaflet/dist/leaflet.css"; // Importa o CSS do Leaflet, isso é importante pro mapa aparecer certo
 import SimpleMap from "./components/Map/Map";
-import { Button } from "@mui/material";
-import { ArrowRight } from "lucide-react";
+import Main from "./components/LixoEletronico/Main";
 
 function App() {
   const [pag, setpag] = useState("lixoeletronico");
@@ -24,12 +23,13 @@ function App() {
   }
   if (pag == "lixoeletronico") {
     return (
-      <div className="bg-gray-100 h-screen w-screen overflow-x-hidden">
+      <div className="bg-gray-100 md:bg-red-600 h-screen w-screen overflow-x-hidden">
         <BodyEletronic
           pagmap={setmapa}
           pagprinc={setprincipal}
           pagsobre={setsobre}
         />
+        <Main />
       </div>
     );
   } else if (pag == "mapa") {

@@ -4,3 +4,8 @@ mui.ui {https://mui.com/} componentes estilizados ex button
 https://www.recyclemore.com.br/sobre
 
 lifestreet {}cria o mapa
+
+https://reactrouter.com/start/data/routing
+
+
+md/sl etc para responsividade tailwind

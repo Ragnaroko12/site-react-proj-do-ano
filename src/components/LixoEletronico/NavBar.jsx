@@ -10,7 +10,7 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
     // ajuda roooolf
     <nav>
       <div className="bg-blue-800  h-12 w-screen ">
-        <div className="flex flex-row items-center justify-center gap-6 pt-2">
+        <div className="flex flex-row items-center justify-center pt-2 gap-6">
           <Button
             variant="outlined"
             onClick={pagprinc}
@@ -26,7 +26,7 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
             size="small"
             startIcon={<Map />}
           >
-            mapa ecoponto
+            ecoponto
           </Button>
 
           <Button variant="outlined" onClick={pagsobre} size="small">
