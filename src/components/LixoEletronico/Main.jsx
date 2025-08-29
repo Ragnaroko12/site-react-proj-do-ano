@@ -27,7 +27,7 @@ function Main() {
       </p>
 
       <div className="flex flex-col-reverse">
-        <img src="/1.jpg" alt="r" />
+        <img src="1.jpg" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
           velit aut quidem nobis natus veniam quasi! Magni ratione excepturi
