@@ -18,7 +18,7 @@ const SimpleMap = () => {
   return (
     // Make sure you set the height and width of the map container otherwise the map won't show
     <div className="flex items-center justify-center flex-col-reverse mt-10 gap-4">
-      <div className="flex overflow-y-scroll w-150 h-80 items-center justify-center">
+      <div className="flex overflow-y-scroll w-100 h-80 items-center justify-center">
         <div className="flex flex-col mt-120 ">
           <Cards
             mapRef={mapRef}

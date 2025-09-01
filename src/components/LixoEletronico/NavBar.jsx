@@ -30,7 +30,7 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
           </Button>
 
           <Button variant="outlined" onClick={pagsobre} size="small">
-            sobre nois
+            sobre nos
           </Button>
         </div>
       </div>
