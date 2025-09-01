@@ -23,7 +23,7 @@ function App() {
   }
   if (pag == "lixoeletronico") {
     return (
-      <div className="bg-green-100 h-screen w-screen overflow-x-hidden">
+      <div className="bg-green-300 h-screen w-screen overflow-x-hidden">
         <BodyEletronic
           pagmap={setmapa}
           pagprinc={setprincipal}
