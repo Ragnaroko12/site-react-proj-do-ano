@@ -39,7 +39,7 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
                 onClick={() => setIsOpen(false)}
                 className="mb-4 text-white hover:text-gray-300"
               >
-                ✕ Fechar
+                ✕
               </button>
 
               <nav className="flex flex-col gap-4">

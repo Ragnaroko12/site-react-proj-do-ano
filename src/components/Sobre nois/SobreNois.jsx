@@ -8,29 +8,22 @@ export default function SobreNos() {
       nome: "Luis Gustavo",
       idade: 17,
       sexualidade: "hominiman",
-      img: "/Images grup members/Senai.png",
+      img: "Images grup members/Senai.png",
       classeExtra: "senai formatação",
     },
     {
       nome: "Felipe Luz",
       idade: 18,
       sexualidade: "—",
-      img: "/Images grup members/Felipe.jpg",
+      img: "Images grup members/Felipe.jpg",
       classeExtra: "Felipe formatação",
     },
     {
       nome: "Vinicius (Japa)",
       idade: 17,
       sexualidade: "—",
-      img: "/Images grup members/Japa.jpg",
+      img: "Images grup members/Japa.jpg",
       classeExtra: "Japa formatação",
-    },
-    {
-      nome: "Gustavo",
-      idade: 18,
-      sexualidade: "—",
-      img: "/Images grup members/SenaiJr.png",
-      classeExtra: "senaijr formatação",
     },
   ];
 
@@ -60,7 +53,7 @@ export default function SobreNos() {
 
       <h2>Membros do grupo</h2>
 
-      <div className="flex flex-col">
+      <div className="">
         {membros.map((membro, index) => (
           <div key={index}>
             <div
