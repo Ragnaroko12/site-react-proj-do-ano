@@ -4,6 +4,8 @@ import "leaflet/dist/leaflet.css";
 import { Icon } from "lucide-react";
 import { Button, Card } from "@mui/material";
 import Cards from "./Cards";
+import iconeCustom from "/icon.png"; // Coloque na pasta certa
+import L from "leaflet";
 
 const SimpleMap = () => {
   const mapRef = useRef(null);
@@ -15,6 +17,13 @@ const SimpleMap = () => {
       mapRef.current.flyTo(posição, 13);
     }
   }, [posição]);
+
+  const greenicon = new L.Icon({
+    iconUrl: iconeCustom,
+    iconSize: [30, 40], // Tamanho do ícone
+    iconAnchor: [20, 40], // Ponto que toca o mapa
+    popupAnchor: [0, -40], // Onde abre o popup
+  });
   return (
     // Make sure you set the height and width of the map container otherwise the map won't show
     <div className="flex items-center justify-center flex-col-reverse overflow-x-hidden mt-10 gap-4">
@@ -128,7 +137,7 @@ const SimpleMap = () => {
           dragging={false}
           style={{ height: "50vh", width: "90vw" }}
         >
-          <Marker position={posição} />
+          <Marker position={posição} icon={greenicon} />
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         </MapContainer>
       </div>
