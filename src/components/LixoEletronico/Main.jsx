@@ -2,7 +2,7 @@ function Main() {
   return (
     <div className=" flex items-center flex-col gap-5 p-7 leading-7">
       <h1 className="text-gray-700 text-2xl Orbitron">
-        Oque é lixo eletronico?
+        O que é lixo eletronico?
       </h1>
       <div className="flex flex-col-reverse">
         <img src="Lixo.png" />

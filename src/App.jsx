@@ -34,14 +34,14 @@ function App() {
     );
   } else if (pag == "mapa") {
     return (
-      <div className="bg-gray-100 w-screen h-screen">
+      <div className="bg-emerald-200 w-screen h-screen">
         <NavBar pagmap={setmapa} pagprinc={setprincipal} pagsobre={setsobre} />
         <SimpleMap />
       </div>
     );
   } else {
     return (
-      <div>
+      <div className="bg-emerald-200 w-screen h-screen">
         <NavBar pagmap={setmapa} pagprinc={setprincipal} pagsobre={setsobre} />
         <SobreNos />
       </div>

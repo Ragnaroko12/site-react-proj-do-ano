@@ -21,7 +21,7 @@ function Cards({
   }
   if (click != id) {
     return (
-      <div className="border oco rounded-sm bg-yellow mb-1">
+      <div className="border oco rounded-sm bg-emerald-800 mb-1">
         <Button className="w-90 h-20" onClick={setclic}>
           <div>
             <h1 className="text-white font-medium Orbitron">{nome}</h1>
@@ -32,7 +32,7 @@ function Cards({
     );
   } else {
     return (
-      <div className="border rounded-sm oco bg-yellow mb-1 aumentar ">
+      <div className="border rounded-sm oco bg-emerald-800 mb-1 aumentar ">
         <div className="w-90 h-20 flex flex-col items-center justify-center">
           <h1 className="text-white font-medium Orbitron">{nome}</h1>
           <Button>ir para o mapa</Button>
