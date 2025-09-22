@@ -4,7 +4,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { useState } from "react";
 
-function NavBar({ pagmap, pagprinc, pagsobre }) {
+function NavBar({ pagmap, pagprinc, pagsobre, paghome }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     // ajuda roooolf
@@ -42,7 +42,7 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
 
               <nav className="flex flex-col gap-4">
                 <a href="#" className="hover:bg-emerald-600 p-2 rounded">
-                  <button onClick={() => pagprinc()}>Home</button>
+                  <button onClick={() => paghome()}>Home</button>
                 </a>
                 <a href="#" className="hover:bg-emerald-600 p-2 rounded">
                   <button onClick={() => pagmap()}>Ecopontos</button>
@@ -51,7 +51,9 @@ function NavBar({ pagmap, pagprinc, pagsobre }) {
                   <button onClick={() => pagsobre()}>Sobre Nós</button>
                 </a>
                 <a href="#" className="hover:bg-emerald-600 p-2 rounded">
-                  Contato
+                  <button onClick={() => pagprinc()}>
+                    Sobre Lixo eletronico
+                  </button>
                 </a>
               </nav>
             </aside>

@@ -9,6 +9,7 @@ function Cards({
   posição,
   setposição,
   mapRef,
+  maps,
 }) {
   function ecoponto() {
     var set = cord;
@@ -25,7 +26,9 @@ function Cards({
         <Button className="w-90 h-20" onClick={setclic}>
           <div>
             <h1 className="text-white font-medium Orbitron">{nome}</h1>
-            <Button>ir para o mapa</Button>
+            <a href={maps}>
+              <Button>ir para o mapa</Button>
+            </a>
           </div>
         </Button>
       </div>
@@ -35,7 +38,9 @@ function Cards({
       <div className="border rounded-sm oco bg-emerald-800 mb-1 aumentar ">
         <div className="w-90 h-20 flex flex-col items-center justify-center">
           <h1 className="text-white font-medium Orbitron">{nome}</h1>
-          <Button>ir para o mapa</Button>
+          <a href={maps}>
+            <Button>ir para o mapa</Button>
+          </a>
         </div>
       </div>
     );

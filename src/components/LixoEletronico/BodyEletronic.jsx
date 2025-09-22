@@ -1,9 +1,14 @@
 import NavBar from "./NavBar";
 
-function BodyEletronic({ pagmap, pagprinc, pagsobre }) {
+function BodyEletronic({ pagmap, pagprinc, pagsobre, paghome }) {
   return (
     <div>
-      <NavBar pagmap={pagmap} pagprinc={pagprinc} pagsobre={pagsobre} />
+      <NavBar
+        pagmap={pagmap}
+        pagprinc={pagprinc}
+        pagsobre={pagsobre}
+        paghome={paghome}
+      />
       <div className=" p-5 items-center ">
         <h1 className="Orbitron text-5xl md:text-5xl text-emerald-800">
           LIXO ELETRONICO
