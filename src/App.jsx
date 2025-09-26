@@ -5,8 +5,8 @@ import SobreNos from "./components/Sobre nois/SobreNois";
 import "leaflet/dist/leaflet.css"; // Importa o CSS do Leaflet, isso é importante pro mapa aparecer certo
 import SimpleMap from "./components/Map/Map";
 import Main from "./components/LixoEletronico/Main";
-import Casa from "./components/Home/home";
 import Foother from "./components/LixoEletronico/Fother";
+import Casa from "./components/Home/Home";
 
 function App() {
   const [pag, setpag] = useState("home");
@@ -32,7 +32,7 @@ function App() {
           pagsobre={setsobre}
           paghome={sethome}
         />
-        <Casa pagprinc={setprincipal} />
+        <Casa pagprinc={setprincipal} pagmap={setmapa} />
         <Foother />
       </div>
     );

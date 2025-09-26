@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { ArrowRight } from "lucide-react";
 
-function Casa({ pagprinc }) {
+function Casa({ pagprinc, pagmap }) {
   return (
     <div className="flex items-start flex-col gap-5 p-7 leading-7  text-gray-500">
       <h1 className="text-gray-700 text-2xl Orbitron">
@@ -79,6 +79,13 @@ function Casa({ pagprinc }) {
           coleta (logística reversa).
         </li>
       </ul>
+      <Button
+        variant="outlined"
+        endIcon={<ArrowRight />}
+        onClick={() => pagmap()}
+      >
+        ver mapas ecoponto
+      </Button>
 
       <br />
 
